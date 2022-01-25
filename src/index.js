@@ -127,7 +127,11 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div>
+      <Box
+        sx={{
+          width: "400px"
+        }}
+      >
         <BeforeField value={this.state.beforeField} />
         <CalcField value={this.state.field} />
         <Box
@@ -159,7 +163,7 @@ class Calculator extends React.Component {
           {this.renderCalcButton()}
           {this.renderButton("+")}
         </Box>
-      </div>
+      </Box>
     );
   }
 }
